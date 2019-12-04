@@ -10,19 +10,15 @@ import java.util.List;
 public class Playground {
 
   public static void main(String args[]) {
-    System.out.println("===Begin : Main ===");
+    System.out.println("Begin : Main");
     List<Person> people = createPeople();
     people.forEach(System.out::println);
+    System.out.println("End : Main");
   }
 
   private static List<Person> createPeople() {
     List<Person> people = new ArrayList<>();
-    people.add(new Person("Chetan", "Chennai", 32));
-    people.add(new Person("Chinmay Dd", "Chennai", 30));
-    people.add(new Person("Dinesh D", "Delhi", 32));
-    people.add(new Person("Durga P", "Delhi", 30));
-    people.add(new Person("Lucky", "Lucknow", 32));
-    people.add(new Person("Lakhan", "Lucknow", 30));
+    people.add(new Person("Chetan", new Address("Chennai", "Madras", "044001"), 32));
     return people;
   }
 
