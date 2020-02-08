@@ -11,8 +11,8 @@ sudo apt-get install entr
 
 ### Usage
 
-run the script from the root of the project
+run the script(war) from the root of the project
 ```
-./watchandrun.sh
+./war
 
 ```
