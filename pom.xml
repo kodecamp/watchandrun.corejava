@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>in.kodecamp</groupId>
-  <artifactId>concepts.eclipsecollections</artifactId>
+  <artifactId>watchandrun.corejava</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>concepts.eclipsecollections</name>
+  <name>${project.artifactId}</name>
   <url>http://maven.apache.org</url>
 
   <properties>
