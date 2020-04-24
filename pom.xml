@@ -27,7 +27,7 @@
   <build>
     <finalName>${project.artifactId}</finalName>
     <plugins>
-
+      <!-- maven-compiler-plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -35,6 +35,31 @@
         <configuration>
           <release>11</release>
           <useIncrementalCompilation>false</useIncrementalCompilation>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <!-- optional -->
+          <mainClass>in.kodecamp.App</mainClass>
+          <arguments>
+          </arguments>
+          <systemProperties>
+            <systemProperty>
+              <key>myproperty</key>
+              <value>myvalue</value>
+            </systemProperty>
+          </systemProperties>
         </configuration>
       </plugin>
 
