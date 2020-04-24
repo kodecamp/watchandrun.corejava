@@ -1,2 +1,12 @@
 #!/bin/bash
-find src/ | entr sh -c 'mvn -q test'
+
+# look the manual of 'entr' for options
+
+# if you want to run the test cases ( -q for messages without log )
+#find src/ | entr sh -c 'mvn -q test'
+
+# run the any file which has main method in it
+find src/ | entr -p $M2_HOME/bin/mvn compile -q exec:java
+
+# IF YOU USE "javac -cp "" -d ./target" or any other way to compile the files
+#find target/ | entr $M2_HOME/bin/mvn -q exec:java
