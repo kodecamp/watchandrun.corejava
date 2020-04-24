@@ -34,7 +34,6 @@
         <version>3.8.0</version>
         <configuration>
           <release>11</release>
-          <stateMillis>1</stateMillis>
           <useIncrementalCompilation>false</useIncrementalCompilation>
         </configuration>
       </plugin>
